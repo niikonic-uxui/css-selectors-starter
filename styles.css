@@ -872,7 +872,7 @@ tfoot {
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#borders > :last-child {
+#borders div div.dashed div div {
     width: 100px;
     height: 100px;
     border: 6px inset var(--dv-lt-blue);
