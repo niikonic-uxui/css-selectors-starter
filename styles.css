@@ -860,7 +860,7 @@ tfoot {
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#borders > :nth-child(4) {
+#borders div div.dashed div {
     width: 150px;
     height: 150px;
     border: 6px double var(--dv-mint);
