@@ -445,12 +445,12 @@ input:focus {
     TO DO:
     select all of the inputs on focus (by tag name/pseudo-class) on the page
 */
-/* ----- */
+/* ----- 
 input:focus {
     outline-color: var(--dv-dk-blue);
 }
 
-/* ----- */
+----- */
 /* 
     TO DO:
     select the labels in the form using the tag name/element selector
@@ -599,7 +599,7 @@ h2.list {
     select all of the divs in the more styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#more > div {
+#more div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -611,7 +611,7 @@ h2.list {
     select the first div in the more styling section using the ID, tag name and direct descendant selectors
   */
   /* ----- */
-#more  :first-child {
+#more div{
     width: 300px;
     height: 300px;
     background-color: var(--dv-red);
@@ -619,16 +619,12 @@ h2.list {
 }
 
 /* ----- */
-/* 
-    TO DO:
-    select the second div in the more styling section using the ID, descendant, and tag name selectors
-*/
-/* ----- */
-#more  :nth-child(2) {
+#more div div {
     width: 250px;
     height: 250px;
     background-color: var(--dv-orange);
 }
+
 
 /* ----- */
 /* 
@@ -636,7 +632,7 @@ h2.list {
     select the third div in the more styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-#more  :nth-child(3) {
+#more div div.third {
     width: 200px;
     height: 200px;
     background-color: var(--dv-yellow);
@@ -648,7 +644,7 @@ h2.list {
     select the fourth div in the pseudo-class styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#more  :nth-child(4) {
+#more div.third div {
     width: 150px;
     height: 150px;
     background-color: var(--dv-mint);
@@ -660,7 +656,7 @@ h2.list {
     select the last div in the more styling section using the ID, tag name, descendant, and class selectors
 */
 /* ----- */
-#more  :last-child {
+#more div div.inner {
     width: 100px;
     height: 100px;
     background-color: var(--dv-lt-blue);
@@ -815,7 +811,7 @@ tfoot {
     select all of the divs in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#borders > div {
+#borders div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -827,7 +823,7 @@ tfoot {
     select the first div in the border styling section using the ID, tag name and direct descendant selectors
   */
   /* ----- */
-#borders > :first-child {
+#borders div {
     width: 300px;
     height: 300px;
     margin: 16px auto;
@@ -840,7 +836,7 @@ tfoot {
     select the second div in the border styling section using the ID, descendant, and tag name selectors
 */
 /* ----- */
-#borders > :nth-child(2) {
+#borders div div {
     width: 250px;
     height: 250px;
     border: 6px dotted var(--dv-orange);
@@ -852,7 +848,7 @@ tfoot {
     select the third div in the border styling section using the ID, descendant, and class name selectors
 */
 /* ----- */
-#borders > :nth-child(3) {
+#borders div div.dashed {
     width: 200px;
     height: 200px;
     border: 6px dashed var(--dv-yellow);
